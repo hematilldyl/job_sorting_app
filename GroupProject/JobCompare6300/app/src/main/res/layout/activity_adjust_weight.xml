@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdjustWeights.AdjustWeightsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvWeightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Adjust Weights (0-9)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSalaryWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary Weight"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:max="9" />
+
+        <TextView
+            android:id="@+id/tvYearlyBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yearly Bonus Weight"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekBonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:max="9" />
+
+        <TextView
+            android:id="@+id/tvTuition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuition Reimbursement"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekTuition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:max="9" />
+
+        <TextView
+            android:id="@+id/tvHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Insurance"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:max="9" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Discount"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:max="9" />
+
+        <TextView
+            android:id="@+id/tvAdoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Adoption Assistance"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekAdoption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:max="9" />
+
+        <!-- Buttons for save and cancel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/mainMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Job Compare"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Button Go to Current Job -->
+        <Button
+            android:id="@+id/buttonGoToCurrentJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Current Job" />
+
+        <!-- Button Enter New Job Offer -->
+        <Button
+            android:id="@+id/buttonGoToJobOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enter New Job Offer" />
+
+        <!-- Button Adjust Comparison Settings -->
+        <Button
+            android:id="@+id/buttonAdjustComparisonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Adjust Comparison Settings" />
+
+        <!-- Button Compare Job Offers -->
+        <Button
+            android:id="@+id/buttonCompareJobOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Compare Job Offers" />
+
+        <!-- Button Clear Database -->
+        <Button
+            android:id="@+id/buttonClearDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear Database" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
